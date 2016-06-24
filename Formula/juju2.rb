@@ -16,7 +16,6 @@ class Juju2 < Formula
     system "go", "build", "github.com/juju/juju/cmd/plugins/juju-metadata"
     bin.install "juju", "juju-metadata"
     bash_completion.install "src/github.com/juju/juju/etc/bash_completion.d/juju2"
-    end
   end
 
   test do
