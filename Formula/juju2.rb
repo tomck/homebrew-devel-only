@@ -9,12 +9,13 @@ class Juju2 < Formula
   end
 
   depends_on "go" => :build
+  conflicts_with "juju", :because => "juju and juju2 cannot be installed simultaneously, and juju environments aren't compatible with juju2"
 
   def install
     ENV["GOPATH"] = buildpath
     system "go", "build", "github.com/juju/juju/cmd/juju"
     system "go", "build", "github.com/juju/juju/cmd/plugins/juju-metadata"
-    bin.install "juju" => "juju2", "juju-metadata" => "juju-metadata2"
+    bin.install "juju", "juju-metadata"
     bash_completion.install "src/github.com/juju/juju/etc/bash_completion.d/juju-2.0"
   end
 
