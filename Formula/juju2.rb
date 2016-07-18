@@ -3,9 +3,9 @@ class Juju2 < Formula
   homepage "https://jujucharms.com/"
 
   devel do
-    url "https://launchpad.net/juju-core/trunk/2.0-beta11/+download/juju-core_2.0-beta11.tar.gz"
-    sha256 "4aaaad717106d7b802a9d06ced1723d5a9a2837c831eb75deaec2bd574693ff9"
-    version "2.0-beta11"
+    url "https://launchpad.net/juju-core/trunk/2.0-beta12/+download/juju-core_2.0-beta12.tar.gz"
+    sha256 "1d65b020ce9c79b281ca3e17eadfb3451912052114db3c59040b151ed8464e78"
+    version "2.0-beta12"
   end
 
   depends_on "go" => :build
@@ -14,7 +14,7 @@ class Juju2 < Formula
     ENV["GOPATH"] = buildpath
     system "go", "build", "github.com/juju/juju/cmd/juju"
     system "go", "build", "github.com/juju/juju/cmd/plugins/juju-metadata"
-    bin.install "juju", "juju-metadata"
+    bin.install "juju" => "juju2", "juju-metadata" => "juju-metadata2"
     bash_completion.install "src/github.com/juju/juju/etc/bash_completion.d/juju-2.0"
   end
 
