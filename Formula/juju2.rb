@@ -19,6 +19,6 @@ class Juju2 < Formula
   end
 
   test do
-    system "#{bin}/juju", "version"
+    system "#{bin}/juju2", "version"
   end
 end
