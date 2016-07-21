@@ -8,9 +8,9 @@ class ElmFormat < Formula
   head "https://github.com/avh4/elm-format.git"
 
   devel do
-    url "https://github.com/avh4/elm-format/archive/0.3.1-alpha.tar.gz"
-    version "0.3.1-alpha"
-    sha256 "6509a4bfb2a292c552b18423be8a3342cdb7d90efa3d1f7841958018c596c9ee"
+    url "https://github.com/avh4/elm-format/archive/0.4.0-alpha.tar.gz"
+    version "0.4.0-alpha"
+    sha256 "d5998e8f89207205ffe75362c982381800e1e6295e063ae71e4b5e0982068527"
   end
 
   depends_on "ghc" => :build
