@@ -3,9 +3,9 @@ class Juju2 < Formula
   homepage "https://jujucharms.com/"
 
   devel do
-    url "https://launchpad.net/juju-core/trunk/2.0-beta13/+download/juju-core_2.0-beta13.tar.gz"
-    sha256 "36be9ff1266b430b43749cc5eeed14d6fa9ece306ed135aca72e82daab7554fc"
-    version "2.0-beta13"
+    url "https://launchpad.net/juju-core/trunk/2.0-beta14/+download/juju-core_2.0-beta14.tar.gz"
+    sha256 "d0e6840eea3ee726a84e0d52fdbf1a7d67112a1e6e2b4717f767ef3396d2f0e5"
+    version "2.0-beta14"
   end
 
   depends_on "go" => :build
